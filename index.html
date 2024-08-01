@@ -26,105 +26,181 @@
 	gtag('config', 'G-Z36H221KFN');
 	</script>
 
-<style>
+    <style>
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
 
-	/*======================================
-	//--//-->   ABOUT
-	======================================*/
-	
-	.about-mf .box-shadow-full {
-	  padding-top: 4rem;
-	  padding-bottom: 4rem;
-	}
-	
-	.about-mf .about-img {
-	  margin-bottom: 2rem;
-	}
-	
-	.about-mf .about-img img {
-	  margin-left: 10px;
-	}
-	
-	
-	.skill-mf .progress {
-	  /* background-color: #cde1f8; */
-	  margin: .5rem 0 1.2rem 0;
-	  border-radius: 0;
-	  height: .7rem;
-	}
-	
-	.skill-mf .progress .progress-bar {
-	  height: .7rem;
-	  background-color: #ffbd39;
-	}
-	
-	
-	/* Animation styles */
-	#typing-animation {
-	  position: relative;
-	  font-size: 30px;
-	  font-weight: bold;
-	  color: rgb(255, 255, 255);
-	  overflow: hidden;
-	  white-space: nowrap;
-	  animation: typing 3s steps(20, end) infinite;
-	}
-	
-	#typing-animation:before {
-	  content: "";
-	  /* position: absolute; */
-	  top: 0;
-	  left: 0;
-	  width: 0;
-	  height: 100%;
-	  background-color: #ccc;
-	  animation: typing-cursor 0.5s ease-in-out infinite;
-	}
-	
-	@keyframes typing {
-	  from {
-		width: 0;
-	  }
-	  to {
-		width: 100%;
-	  }
-	}
-	
-	@keyframes typing-cursor {
-	  from {
-		width: 5px;
-	  }
-	  to {
-		width: 0;
-	  }
-	}
-	
-	
-	/* project image zoom effect */
-	
-	.zoom-effect {
-	  overflow: hidden;
-	  transition: transform 0.3s ease-out;
-	}
-	
-	.zoom-effect:hover {
-	  transform: scale(1.1);
-	}
-	
-	
-	</style>
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
 
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
 
+      .skill-mf .progress {
+        margin: .5rem 0 1.2rem 0;
+        border-radius: 0;
+        height: .7rem;
+      }
 
+      .skill-mf .progress .progress-bar {
+        height: .7rem;
+        background-color: #ffbd39;
+      }
+
+      /* Animation styles */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typing 3s steps(20, end) infinite;
+      }
+
+      #typing-animation:before {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #ccc;
+        animation: typing-cursor 0.5s ease-in-out infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes typing-cursor {
+        from {
+          width: 5px;
+        }
+        to {
+          width: 0;
+        }
+      }
+
+      /* project image zoom effect */
+      .zoom-effect {
+        overflow: hidden;
+        transition: transform 0.3s ease-out;
+      }
+
+      .zoom-effect:hover {
+        transform: scale(1.1);
+      }
+
+      .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+        background: #00FFFF !important;
+        border-color: #ffffff !important;
+        color: #000000 !important;
+      }
+
+      .btn-primary:hover {
+        background: #ffffff !important; 
+        color: #000000 !important;
+      }
+
+      .subheading,
+      h1 span,
+      .text-primary,
+      .navbar-nav > .nav-item > .nav-link span:before,
+      .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
+      .ftco-navbar-light.scrolled .nav-item.active > a,
+      .ftco-navbar-light.scrolled .nav-item.cta > a {
+        color: #00FFFF !important;
+      }
+
+      .ftco-navbar-light.scrolled .nav-item.cta > a,
+      .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+        border: 1px solid #00FFFF;
+        background: #00FFFF;
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+        border: 1px solid #00FFFF;
+        background: #00FFFF !important;
+      }
+
+      .slider-text .breadcrumbs span a:hover, 
+      .slider-text .breadcrumbs span a:focus,
+      .ftco-navbar-light .navbar-toggler:hover, 
+      .ftco-navbar-light .navbar-toggler:focus,
+      .comment-list li .comment-body .reply:hover {
+        color: #00FFFF;
+      }
+
+      .ftco-counter .ftco-number,
+      .ftco-footer-social li a:hover {
+        background: #00FFFF !important;
+      }
+
+      .project:hover .overlay, 
+      .project .text h3 a:hover,
+      .block-27 ul li.active a, 
+      .block-27 ul li.active span {
+        background: #00FFFF !important;
+      }
+
+      .resume-wrap .date {
+        color: #00FFFF !important;
+      }
+
+      .services-1 .icon + .desc h3::after {
+        background: #00FFFF !important;
+      }
+
+      .contact-info .icon {
+        color: #00FFFF !important; 
+      }
+
+      .btn-primary[href*="resumebtn"]:hover {
+        background: #ffffff !important;
+      }
+
+      .contact-info h3 {
+        color: #00FFFF !important; 
+      }
+
+      .heading-section h2,
+      .ftco-heading-2 {
+        color: #ffffff !important; 
+      }
+
+      .contact-info p {
+        color: #ffffff !important;
+      }
+
+      /* Change "Hello!" to white */
+      .subheading {
+        color: #ffffff !important;
+      }
+
+      /* Specific hover effect for the resume button */
+      .btn-primary:hover {
+        background: #ffffff !important; /* Change to white on hover */
+        color: #000000 !important; /* Black text on hover */
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html">Waqar Ahmed</a>
         <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
+
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
             <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
@@ -137,304 +213,296 @@
         </div>
       </div>
     </nav>
-	  
-	<section id="home-section" class="hero">
-		<div class="home-slider owl-carousel">
-		  <div class="slider-item">
-			<div class="overlay"></div>
-			<div class="container">
-			  <div class="row d-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-				<div class="col-md-10 ftco-animate text-center">
-				  <div class="text">
-					<span class="subheading">Hello00!</span>
-					<h1 class="mb-4 mt-3">I'm <span>Waqar Ahmed</span></h1>
-					<h2 class="mb-4">A Student at University of Illinois at Chicago</h2>
-					<p>
-						<p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4">Resume</a>
-					  <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4" id="contactMeBtn">Contact Me</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-	  
-		  <div class="slider-item">
-			<div class="overlay"></div>
-			<div class="container">
-			  <div class="row d-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-				<div class="col-md-10 ftco-animate text-center">
-				  <div class="text">
-					<span class="subheading">Hello!</span>
-					<h1 class="mb-4 mt-3">I'm a <span>Software Developer</span> based in Chicago</h1>
-					<p>
-						<p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4">Resume</a>
-					  <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4" id="contactMeBtn">Contact Me</a>
-					</p>
-				  </div>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </section>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Waqar Ahmed</span></h1>
 
+                  <span id="typing-animation"></span>
 
+                  <script>
+                    const typingAnimationElement = document.getElementById('typing-animation');
+                    const typingTexts = [
+                      'Student at UIC',
+                      'Aspiring Software Engineer',
+                      'Fullstack Developer',
+                    ];
 
-<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-  <div class="container">
-    <div class="row justify-content-center pb-3">
-      <div class="col-md-12 heading-section text-center ftco-animate">
-		<h1 class="big big-2">About Me</h1>
-        <h2 class="mb-4" style="color: white;">About Me</h2>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-md-8 ftco-animate">
-        <p style="color: white;">Hello! My name is <strong>Waqar Ahmed</strong>, and I am a student at the <strong>University of Illinois at Chicago</strong> currently pursuing a <strong>Bachelor's degree in Computer Science</strong>.</p>
-        <p style="color: white;">Driven by a commitment to continuous growth and learning, my goal is to contribute to the development of technological solutions for the betterment of society. I'm always excited to take on new tasks that allow me to use my technical abilities and creativity to make a positive impact. I have a strong <strong>passion</strong> for software development, and I'm always looking for opportunities to grow my skills and knowledge in the industry.</p>
-        <p style="color: white;">I have interned at organizations such as <strong>BTG Construction</strong> and <strong>Boosted Biz</strong>, where I played integral roles in <strong>backend</strong> and <strong>frontend</strong> engineering projects, including developing an <strong>AI chatbot</strong>, and helping create and launch <strong>full stack web applications</strong>. These experiences not only honed my technical capabilities but also <strong>deepened</strong> my understanding of the dynamic field of <strong>software engineering</strong>.</p>
-        <p style="color: white;">In addition to my internships, I serve as an <strong>Undergraduate Teaching Assistant</strong> at <strong>UIC</strong>. This position has not only allowed me to enhance the educational experiences of my fellow students, but it has also improved my leadership and communication abilities.</p>
-        <p style="color: white;">I have a strong commitment to continuing my professional development, and am always <strong>looking for new opportunities</strong> to make a positive impact in the tech industry and society at large. I believe that I can bring diverse perspectives and experiences to the team, as well as a collaborative and supportive attitude. Please don’t hesitate to <strong>reach out</strong> or <strong>message me</strong> if you would like to connect or discuss potential opportunities.</p>
-      </div>
-      <div class="col-md-4 ftco-animate d-none d-md-block">
-        <img src="images/pp6.jpeg" alt="Waqar Ahmed" class="img-fluid">
-      </div>
-    </div>
-    <div class="row justify-content-center mt-5 d-md-none">
-      <div class="col-12 text-center">
-        <img src="images/pp6.jpeg" alt="Waqar Ahmed" class="img-fluid" style="max-width: 400px;">
-      </div>
-    </div>
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-6 text-center ftco-animate">
-        <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
-      </div>
-    </div>
-  </div>
-</section>
+                    function playTypingAnimation(text) {
+                      for (let i = 0; i < text.length; i++) {
+                        setTimeout(() => {
+                          typingAnimationElement.textContent += text[i];
+                        }, i * 200);
+                      }
 
-	  
-	  
-	  
-	  
-	  
+                      setTimeout(() => {
+                        typingAnimationElement.textContent = '';
+                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                      }, text.length * 200);
+                    }
 
-	  
+                    playTypingAnimation(typingTexts[0]);
+                  </script>
 
-<section class="ftco-section ftco-no-pb" id="resume-section">
-	<div class="container">
-	  <div class="row justify-content-center pb-5">
-		<div class="col-md-10 heading-section text-center ftco-animate">
-		  <h1 class="big big-2">Experiences</h1>
-		  <h2 class="mb-4">My Experiences</h2>
-		  <p>A passionate software developer always looking for opportunities to grow my skills and knowledge in the industry.</p>
-		</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-12">
-		  <div class="resume-wrap ftco-animate">
-			<span class="date">June 2024 – Present</span>
-			<h2>Full-Stack Developer Intern</h2>
-			<span class="position">BTG Construction Inc</span>
-			<span class="location">Chicago, IL</span>
-			<p class="mt-4">Developed and deployed the company's full stack web application using React, Node.js, and MongoDB, providing a seamless experience with efficient data management.</p>
-			<p>Created responsive, user-friendly interfaces with HTML, CSS, and JavaScript frameworks, that enabled users to access detailed project information and easily schedule consultations.</p>
-			<p>Coordinated with sales and cross-functional teams to gather project requirements, design intuitive user interfaces, and deliver scalable web solutions aligned with business needs on schedule.</p>
-		  </div>
-  
-		  <div class="resume-wrap ftco-animate">
-			<span class="date">Dec 2023 – May 2024</span>
-			<h2>Software Engineering Intern</h2>
-			<span class="position">Boosted Biz</span>
-			<span class="location">Chicago, IL</span>
-			<p class="mt-4">Collaborated with a team of 3 in the software development department at Boosted Biz, focusing on both front and backend solutions for a range of business applications.</p>
-			<p>Built backend functionality using JavaScript, SQL, and Python, optimizing database management and implementing efficient API integrations.</p>
-			<p>Developed an AI chatbot using Python, JavaScript, CSS, and Angular, designed to assist users with order inquiries and product recommendations, significantly improving user engagement and customer satisfaction.</p>
-		  </div>
-  
-		  <div class="resume-wrap ftco-animate">
-			<span class="date">Aug 2023 – Present</span>
-			<h2>Undergraduate Teaching Assistant</h2>
-			<span class="position">University of Illinois at Chicago</span>
-			<span class="location">Chicago, IL</span>
-			<p class="mt-4">Designed interactive MATLAB lesson plans using Zybooks for 250+ students, covering matrices, data types, operators, arrays, structures, and more, resulting in an improved understanding of core programming concepts.</p>
-			<p>Provided personalized office hours in person and over zoom to address student challenges, improving course comprehension and program design skills.</p>
-			<p>Proctored lab sessions, by giving small lectures, illustrating concepts on the board, and providing real-time coding assistance and troubleshooting support to 50+ students.</p>
-		  </div>
-		</div>
-	  </div>
-	  <div class="row justify-content-center mt-5">
-		<div class="col-md-6 text-center ftco-animate">
-		  <p><a href="#" class="btn btn-primary py-4 px-5">Resume</a></p>
-		</div>
-	  </div>
-	</div>
-  </section>
-  
+                  <br>
+                  <br>
 
-  <section class="ftco-section" id="services-section">
-	<div class="container">
-	  <div class="row justify-content-center py-5 mt-5">
-		<div class="col-md-12 heading-section text-center ftco-animate">
-		  <h1 class="big big-2">Skills</h1>
-		  <h2 class="mb-4">Skills</h2>
-		</div>
-	  </div>
-	  <div class="row">
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://react.dev/" target="_blank">
-			  <span class="icon">
-				<img src="images/react11.png" alt="React.js" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">React.js</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://nextjs.org/" target="_blank">
-			  <span class="icon">
-				<img src="images/next11.svg" alt="Next.js" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">Next.js</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://www.oracle.com/java/" target="_blank">
-			  <span class="icon">
-				<img src="images/java2.png" alt="Java" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">Java</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://www.python.org/" target="_blank">
-			  <span class="icon">
-				<img src="images/python7.png" alt="Python" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">Python</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://cplusplus.com/" target="_blank">
-			  <span class="icon">
-				<img src="images/c++4.png" alt="C++" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">C++</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-		<div class="col-md-4 text-center d-flex ftco-animate">
-		  <div class="services-1">
-			<a href="https://tailwindcss.com/" target="_blank">
-			  <span class="icon">
-				<img src="images/tailwind.png" alt="Tailwind" style="width: 50px;">
-			  </span>
-			  <div class="desc">
-				<h3 class="mb-5">Tailwind</h3>
-			  </div>
-			</a>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </section>
-  
-  
-
-    <section class="ftco-section ftco-project" id="projects-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Showcasing some of the projects I have worked on.</p>
+                  <p>
+                    <a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a>
+                    <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4" id="contactMeBtn">Contact Me</a>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Automated AI Crypto Bot</a></h3>
-	    					<span>Full-stack Development</span>
-	    				</div>
-    				</div>
-  				</div>
-  				<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Real Estate Predictor App</a></h3>
-	    					<span>Machine Learning</span>
-	    				</div>
-    				</div>
-  				</div>
+      </div>
+    </section>
 
-    			<div class="col-md-8">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Automated AI Crypto Bot</a></h3>
-	    					<span>Full-stack Development</span>
-	    				</div>
-    				</div>
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">About Me</h1>
+            <h2 class="mb-4" style="color: white;">About Me</h2>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-md-8 ftco-animate">
+            <p style="color: white;">Hello! My name is <strong>Waqar Ahmed</strong>, and I am a student at the <strong>University of Illinois at Chicago</strong> currently pursuing a <strong>Bachelor's degree in Computer Science</strong>.</p>
+            <p style="color: white;">Driven by a commitment to continuous growth and learning, my goal is to contribute to the development of technological solutions for the betterment of society. I'm always excited to take on new tasks that allow me to use my technical abilities and creativity to make a positive impact. I have a strong <strong>passion</strong> for software development, and I'm always looking for opportunities to grow my skills and knowledge in the industry.</p>
+            <p style="color: white;">I have interned at organizations such as <strong>BTG Construction</strong> and <strong>Boosted Biz</strong>, where I played integral roles in <strong>backend</strong> and <strong>frontend</strong> engineering projects, including developing an <strong>AI chatbot</strong>, and helping create and launch <strong>full stack web applications</strong>. These experiences not only honed my technical capabilities but also <strong>deepened</strong> my understanding of the dynamic field of <strong>software engineering</strong>.</p>
+            <p style="color: white;">In addition to my internships, I serve as an <strong>Undergraduate Teaching Assistant</strong> at <strong>UIC</strong>. This position has not only allowed me to enhance the educational experiences of my fellow students, but it has also improved my leadership and communication abilities.</p>
+            <p style="color: white;">I have a strong commitment to continuing my professional development, and am always <strong>looking for new opportunities</strong> to make a positive impact in the tech industry and society at large. I believe that I can bring diverse perspectives and experiences to the team, as well as a collaborative and supportive attitude. Please don’t hesitate to <strong>reach out</strong> or <strong>message me</strong> if you would like to connect or discuss potential opportunities.</p>
+          </div>
+          <div class="col-md-4 ftco-animate d-none d-md-block">
+            <img src="images/pp6.jpeg" alt="Waqar Ahmed" class="img-fluid">
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5 d-md-none">
+          <div class="col-12 text-center">
+            <img src="images/pp6.jpeg" alt="Waqar Ahmed" class="img-fluid" style="max-width: 400px;">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Real Estate Predictor App</a></h3>
-	    					<span>Machine Learning</span>
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4">
-    				<div class="row">
-    					<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Automated AI Crypto Bot</a></h3>
-			    					<span>Full-stack Development</span>
-			    				</div>
-		    				</div>
-	    				</div>
-	    				<div class="col-md-12">
-		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-		    					<div class="overlay"></div>
-			    				<div class="text text-center p-4">
-			    					<h3><a href="#">Real Estate Predictor App</a></h3>
-			    					<span>Machine Learning</span>
-			    				</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Experiences</h1>
+            <h2 class="mb-4">My Experiences</h2>
+            <p>A passionate software developer always looking for opportunities to grow my skills and knowledge in the industry.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">June 2024 – Present</span>
+              <h2>Full-Stack Developer Intern</h2>
+              <span class="position">BTG Construction Inc</span>
+              <span class="location">Chicago, IL</span>
+              <p class="mt-4">Developed and deployed the company's full stack web application using React, Node.js, and MongoDB, providing a seamless experience with efficient data management.</p>
+              <p>Created responsive, user-friendly interfaces with HTML, CSS, and JavaScript frameworks, that enabled users to access detailed project information and easily schedule consultations.</p>
+              <p>Coordinated with sales and cross-functional teams to gather project requirements, design intuitive user interfaces, and deliver scalable web solutions aligned with business needs on schedule.</p>
+            </div>
+
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Dec 2023 – May 2024</span>
+              <h2>Software Engineering Intern</h2>
+              <span class="position">Boosted Biz</span>
+              <span class="location">Chicago, IL</span>
+              <p class="mt-4">Collaborated with a team of 3 in the software development department at Boosted Biz, focusing on both front and backend solutions for a range of business applications.</p>
+              <p>Built backend functionality using JavaScript, SQL, and Python, optimizing database management and implementing efficient API integrations.</p>
+              <p>Developed an AI chatbot using Python, JavaScript, CSS, and Angular, designed to assist users with order inquiries and product recommendations, significantly improving user engagement and customer satisfaction.</p>
+            </div>
+
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Aug 2023 – Present</span>
+              <h2>Undergraduate Teaching Assistant</h2>
+              <span class="position">University of Illinois at Chicago</span>
+              <span class="location">Chicago, IL</span>
+              <p class="mt-4">Designed interactive MATLAB lesson plans using Zybooks for 250+ students, covering matrices, data types, operators, arrays, structures, and more, resulting in an improved understanding of core programming concepts.</p>
+              <p>Provided personalized office hours in person and over zoom to address student challenges, improving course comprehension and program design skills.</p>
+              <p>Proctored lab sessions, by giving small lectures, illustrating concepts on the board, and providing real-time coding assistance and troubleshooting support to 50+ students.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-4 px-5">Resume</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">Skills</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://react.dev/" target="_blank">
+                <span class="icon">
+                  <img src="images/react11.png" alt="React.js" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">React.js</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://nextjs.org/" target="_blank">
+                <span class="icon">
+                  <img src="images/next15.png" alt="Next.js" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">Next.js</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://www.oracle.com/java/" target="_blank">
+                <span class="icon">
+                  <img src="images/java2.png" alt="Java" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">Java</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://www.python.org/" target="_blank">
+                <span class="icon">
+                  <img src="images/python7.png" alt="Python" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">Python</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://cplusplus.com/" target="_blank">
+                <span class="icon">
+                  <img src="images/c++4.png" alt="C++" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">C++</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate">
+            <div class="services-1">
+              <a href="https://tailwindcss.com/" target="_blank">
+                <span class="icon">
+                  <img src="images/tailwind.png" alt="Tailwind" style="width: 50px;">
+                </span>
+                <div class="desc">
+                  <h3 class="mb-5">Tailwind</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section ftco-project" id="projects-section">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Some of the projects I have worked on</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3><a href="#">Automated AI Crypto Bot</a></h3>
+                <span>Full-stack Development</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3><a href="#">Real Estate Predictor App</a></h3>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3><a href="#">Automated AI Crypto Bot</a></h3>
+                <span>Full-stack Development</span>
+              </div>
+            </div>
+
+            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3><a href="#">Real Estate Predictor App</a></h3>
+                <span>Machine Learning</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
+                  <div class="overlay"></div>
+                  <div class="text text-center p-4">
+                    <h3><a href="#">Automated AI Crypto Bot</a></h3>
+                    <span>Full-stack Development</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
+                  <div class="overlay"></div>
+                  <div class="text text-center p-4">
+                    <h3><a href="#">Real Estate Predictor App</a></h3>
+                    <span>Machine Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -444,44 +512,42 @@
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Based In</h3>
-	            <p>Chicago, IL, USA</p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="images/address4.png" alt="Tailwind" style="width: 50px;">
+              </div>
+              <h3 class="mb-4">Based In</h3>
+              <p>Chicago, IL, USA</p>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://7737861127">773-786-1127</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="images/phone4.png" alt="Tailwind" style="width: 60px;">
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://7737861127">773-786-1127</a></p>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:waqar.ah1011@gmail.com">waqar.ah1011@gmail.com</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="images/mail4.png" alt="Tailwind" style="width: 60px;">
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:waqar.ah1011@gmail.com">waqar.ah1011@gmail.com</a></p>
+            </div>
           </div>
-		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-			<div class="align-self-stretch box p-4 text-center">
-			  <div class="icon d-flex align-items-center justify-content-center">
-				<span class="icon-globe"></span>
-			  </div>
-			  <h3 class="mb-4">LinkedIn</h3>
-			  <p><a href="https://www.linkedin.com/in/waqar-ahmed1011" target="_blank">linkedin.com/in/waqar-ahmed1011</a></p>
-	          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <img src="images/linkedin5.png" alt="Tailwind" style="width: 35px;">
+              </div>
+              <h3 class="mb-4">LinkedIn</h3>
+              <p><a href="https://www.linkedin.com/in/waqar-ahmed1011" target="_blank">linkedin.com/in/waqar-ahmed1011</a></p>
+            </div>
           </div>
         </div>
-
-		
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
@@ -502,16 +568,14 @@
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
             </form>
-          
           </div>
-
           <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/pp6.jpeg);"></div>
+            <div class="img" style="background-image: url(images/pp6.jpeg);"></div>
           </div>
         </div>
       </div>
     </section>
-		
+
     <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -599,6 +663,5 @@
         });
       });
     </script>
-    
   </body>
 </html>
