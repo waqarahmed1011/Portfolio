@@ -26,172 +26,182 @@
 	gtag('config', 'G-Z36H221KFN');
 	</script>
 
-    <style>
-      .about-mf .box-shadow-full {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-      }
+<style>
 
-      .about-mf .about-img {
-        margin-bottom: 2rem;
-      }
 
-      .about-mf .about-img img {
-        margin-left: 10px;
-      }
 
-      .skill-mf .progress {
-        margin: .5rem 0 1.2rem 0;
-        border-radius: 0;
-        height: .7rem;
-      }
+	#typing-animation {
+	  position: relative;
+	  font-size: 30px;
+	  font-weight: bold;
+	  color: rgb(255, 255, 255);
+	  overflow: hidden;
+	  white-space: nowrap;
+	  animation: typing 3s steps(20, end) infinite;
+	}
 
-      .skill-mf .progress .progress-bar {
-        height: .7rem;
-        background-color: #ffbd39;
-      }
+	#typing-animation:before {
+	  content: "";
+	  top: 0;
+	  left: 0;
+	  width: 0;
+	  height: 100%;
+	  background-color: #ccc;
+	  animation: typing-cursor 0.5s ease-in-out infinite;
+	}
 
-      /* Animation styles */
-      #typing-animation {
-        position: relative;
-        font-size: 30px;
-        font-weight: bold;
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typing 3s steps(20, end) infinite;
-      }
+	@keyframes typing {
+	  from {
+		width: 0;
+	  }
+	  to {
+		width: 100%;
+	  }
+	}
 
-      #typing-animation:before {
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #ccc;
-        animation: typing-cursor 0.5s ease-in-out infinite;
-      }
+	@keyframes typing-cursor {
+	  from {
+		width: 5px;
+	  }
+	  to {
+		width: 0;
+	  }
+	}
 
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 100%;
-        }
-      }
 
-      @keyframes typing-cursor {
-        from {
-          width: 5px;
-        }
-        to {
-          width: 0;
-        }
-      }
+	.zoom-effect {
+	  overflow: hidden;
+	  transition: transform 0.3s ease-out;
+	}
 
-      /* project image zoom effect */
-      .zoom-effect {
-        overflow: hidden;
-        transition: transform 0.3s ease-out;
-      }
+	.zoom-effect:hover {
+	  transform: scale(1.1);
+	}
 
-      .zoom-effect:hover {
-        transform: scale(1.1);
-      }
+	.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	  background: #00FFFF !important;
+	  border-color: #ffffff !important;
+	  color: #000000 !important;
+	}
 
-      .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-        background: #00FFFF !important;
-        border-color: #ffffff !important;
-        color: #000000 !important;
-      }
+	.btn-primary:hover {
+	  background: #ffffff !important; 
+	  color: #000000 !important;
+	}
 
-      .btn-primary:hover {
-        background: #ffffff !important; 
-        color: #000000 !important;
-      }
+	.subheading,
+	h1 span,
+	.text-primary,
+	.navbar-nav > .nav-item > .nav-link span:before,
+	.ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
+	.ftco-navbar-light.scrolled .nav-item.active > a,
+	.ftco-navbar-light.scrolled .nav-item.cta > a {
+	  color: #00FFFF !important;
+	}
 
-      .subheading,
-      h1 span,
-      .text-primary,
-      .navbar-nav > .nav-item > .nav-link span:before,
-      .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
-      .ftco-navbar-light.scrolled .nav-item.active > a,
-      .ftco-navbar-light.scrolled .nav-item.cta > a {
-        color: #00FFFF !important;
-      }
+	.ftco-navbar-light.scrolled .nav-item.cta > a,
+	.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+	  border: 1px solid #00FFFF;
+	  background: #00FFFF;
+	}
 
-      .ftco-navbar-light.scrolled .nav-item.cta > a,
-      .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-        border: 1px solid #00FFFF;
-        background: #00FFFF;
-      }
+	.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+	  border: 1px solid #00FFFF;
+	  background: #00FFFF !important;
+	}
 
-      .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-        border: 1px solid #00FFFF;
-        background: #00FFFF !important;
-      }
+	.slider-text .breadcrumbs span a:hover, 
+	.slider-text .breadcrumbs span a:focus,
+	.ftco-navbar-light .navbar-toggler:hover, 
+	.ftco-navbar-light .navbar-toggler:focus,
+	.comment-list li .comment-body .reply:hover {
+	  color: #00FFFF;
+	}
 
-      .slider-text .breadcrumbs span a:hover, 
-      .slider-text .breadcrumbs span a:focus,
-      .ftco-navbar-light .navbar-toggler:hover, 
-      .ftco-navbar-light .navbar-toggler:focus,
-      .comment-list li .comment-body .reply:hover {
-        color: #00FFFF;
-      }
+	.ftco-counter .ftco-number,
+	.ftco-footer-social li a:hover {
+	  background: #00FFFF !important;
+	}
 
-      .ftco-counter .ftco-number,
-      .ftco-footer-social li a:hover {
-        background: #00FFFF !important;
-      }
+	.services-1:hover {
+    background: #00FFFF !important; 
+  }
 
-      .project:hover .overlay, 
-      .project .text h3 a:hover,
-      .block-27 ul li.active a, 
-      .block-27 ul li.active span {
-        background: #00FFFF !important;
-      }
+  .services-1:hover .icon,
+  .services-1:hover .desc h3 {
+    background: none !important; 
+    color: #ffffff !important; 
+  }
+	.project:hover .overlay, 
+	.project .text h3 a:hover,
+	.block-27 ul li.active a, 
+	.block-27 ul li.active span {
+	  background: #00FFFF !important;
+	}
 
-      .resume-wrap .date {
-        color: #00FFFF !important;
-      }
+	.resume-wrap .date {
+	  color: #00FFFF !important;
+	}
 
-      .services-1 .icon + .desc h3::after {
-        background: #00FFFF !important;
-      }
+	.services-1 .icon + .desc h3::after {
+	  background: #00FFFF !important;
+	}
 
-      .contact-info .icon {
-        color: #00FFFF !important; 
-      }
+	.contact-info .icon {
+	  color: #00FFFF !important; 
+	}
 
-      .btn-primary[href*="resumebtn"]:hover {
-        background: #ffffff !important;
-      }
+	.btn-primary:hover {
+	  background: #ffffff !important; 
+	  color: #000000 !important; 
+	}
 
-      .contact-info h3 {
-        color: #00FFFF !important; 
-      }
+	.subheading {
+	  color: #ffffff !important;
+	}
 
-      .heading-section h2,
-      .ftco-heading-2 {
-        color: #ffffff !important; 
-      }
+	#resumebtn:hover {
+	  background: #ffffff !important;
+	  color: #000000 !important;
+	}
 
-      .contact-info p {
-        color: #ffffff !important;
-      }
+	#contactMeBtn:hover {
+	  background: #ffffff !important;
+	  color: #000000 !important;
+	}
 
-      /* Change "Hello!" to white */
-      .subheading {
-        color: #ffffff !important;
-      }
+	.btn-primary.send-message-btn:hover {
+	  background: #ffffff !important;
+	  color: #000000 !important;
+	}
 
-      /* Specific hover effect for the resume button */
-      .btn-primary:hover {
-        background: #ffffff !important; /* Change to white on hover */
-        color: #000000 !important; /* Black text on hover */
-      }
-    </style>
+
+	.navbar-toggler,
+	.navbar-nav .nav-link,
+	.navbar-nav .nav-item .nav-link {
+		color: #ffffff !important;
+	}
+
+
+
+
+
+	.contact-info .box h3 {
+		color: #00FFFF !important;
+	}
+
+
+	.contact-info .box p {
+		color: #ffffff !important;
+	}
+
+	
+  </style>
+
+
+
+
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -337,7 +347,7 @@
         </div>
         <div class="row justify-content-center mt-5">
           <div class="col-md-6 text-center ftco-animate">
-            <p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-4 px-5">Resume</a></p>
+            <p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a></p>
           </div>
         </div>
       </div>
@@ -428,77 +438,79 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-project" id="projects-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Some of the projects I have worked on</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-4.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <h3><a href="#">Automated AI Crypto Bot</a></h3>
-                <span>Full-stack Development</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-5.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <h3><a href="#">Real Estate Predictor App</a></h3>
-                <span>Machine Learning</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-8">
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-1.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <h3><a href="#">Automated AI Crypto Bot</a></h3>
-                <span>Full-stack Development</span>
-              </div>
-            </div>
-
-            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-6.jpg);">
-              <div class="overlay"></div>
-              <div class="text text-center p-4">
-                <h3><a href="#">Real Estate Predictor App</a></h3>
-                <span>Machine Learning</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-2.jpg);">
-                  <div class="overlay"></div>
-                  <div class="text text-center p-4">
-                    <h3><a href="#">Automated AI Crypto Bot</a></h3>
-                    <span>Full-stack Development</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/project-3.jpg);">
-                  <div class="overlay"></div>
-                  <div class="text text-center p-4">
-                    <h3><a href="#">Real Estate Predictor App</a></h3>
-                    <span>Machine Learning</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+		  <div class="row justify-content-center pb-5">
+			<div class="col-md-12 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Some of the projects I have worked on</p>
+			</div>
+		  </div>
+		  <div class="row">
+			<!-- Top Row -->
+			<div class="col-md-4">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/house1.jpg);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Real Estate Predictor App</a></h3>
+				  <!-- <span>Python, Django, Scikit-learn, Pandas, Numpy, Matplotlib, HTML/CSS, JavaScript</span> -->
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/crypto2.webp);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Automated AI Crypto Trading Bot</a></h3>
+				  <!-- <span>HTML/CSS, JavaScript, Node.js, MongoDB, Python, Scikit-learn</span> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Middle Row -->
+			<div class="col-md-8">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/movies2.png);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Movies Library App</a></h3>
+				  <!-- <span>test</span> -->
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/quotes1.png);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Daily Motivational Quotes App</a></h3>
+				  <!-- <span>Machine Learning</span> -->
+				</div>
+			  </div>
+			</div>
+	  
+			<!-- Bottom Row -->
+			<div class="col-md-4">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chicago1.png);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Welcome to Chicago App</a></h3>
+				  <!-- <span>Full-stack Development</span> -->
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-8">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/shapes2.png);">
+				<div class="overlay"></div>
+				<div class="text text-center p-4">
+				  <h3><a href="#">Kids Shapes App</a></h3>
+				  <!-- <span>Machine Learning</span> -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
@@ -565,7 +577,7 @@
                 <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
               </div>
             </form>
           </div>
