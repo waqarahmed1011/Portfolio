@@ -470,7 +470,7 @@
 	  
 			<!-- Middle Row -->
 			<div class="col-md-8">
-			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/movies2.png);">
+			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/movies3.png);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Movies Library App</a></h3>
@@ -563,23 +563,50 @@
 
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
-              </div>
-            </form>
+			<form action="https://formspree.io/f/xldrbnla" method="POST" class="bg-light p-4 p-md-5 contact-form">
+				<input type="hidden" name="_subject" value="New submission from your portfolio website">
+				<div class="form-group">
+				  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+				</div>
+				<div class="form-group">
+				  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+				</div>
+				<div class="form-group">
+				  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+				</div>
+				<div class="form-group">
+				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
+				</div>
+			  </form>
+			  
+			  <p class="thank-you" style="display:none;">Thank you for your message! I will get back to you shortly!</p>
+			  
+			  <script>
+				document.querySelector('form').addEventListener('submit', function(e) {
+				  e.preventDefault();
+				  fetch(this.action, {
+					method: 'POST',
+					body: new FormData(this),
+					headers: { 'Accept': 'application/json' }
+				  }).then(response => {
+					if (response.ok) {
+					  this.reset();
+					  document.querySelector('.thank-you').style.display = 'block';
+					} else {
+					  response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+						  alert(data["errors"].map(error => error["message"]).join(", "));
+						} else {
+						  alert("Oops! There was a problem submitting the form");
+						}
+					  })
+					}
+				  }).catch(error => {
+					alert("Oops! There was a problem submitting your form");
+				  });
+				});
+			  </script>
+
           </div>
           <div class="col-md-6 d-flex">
             <div class="img" style="background-image: url(images/pp6.jpeg);"></div>
