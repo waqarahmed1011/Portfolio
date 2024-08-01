@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>Waqar Ahmed - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,184 +16,300 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z36H221KFN"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z36H221KFN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-	gtag('config', 'G-Z36H221KFN');
-	</script>
+    gtag('config', 'G-Z36H221KFN');
+    </script>
 
 <style>
-	/* Additional styles for responsiveness */
-	body, html {
-	  overflow-x: hidden;
-	  /* Ensure no horizontal overflow */
-	}
+    /* Additional styles for responsiveness */
+    body, html {
+      overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
+    }
 
-	#typing-animation {
-	  position: relative;
-	  font-size: 30px;
-	  font-weight: bold;
-	  color: rgb(255, 255, 255);
-	  overflow: hidden;
-	  white-space: nowrap;
-	  animation: typing 3s steps(20, end) infinite;
-	}
+    .container, .row, .resume-wrap, .contact-section, .block-21, .home-slider .owl-carousel, .home-slider .owl-stage-outer {
+      max-width: 100%; /* Ensure containers do not exceed viewport width */
+      overflow-x: hidden; /* Prevent any potential overflow within containers */
+    }
 
-	#typing-animation:before {
-	  content: "";
-	  top: 0;
-	  left: 0;
-	  width: 0;
-	  height: 100%;
-	  background-color: #ccc;
-	  animation: typing-cursor 0.5s ease-in-out infinite;
-	}
+    .resume-wrap {
+      width: 100%;
+      margin-bottom: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 5px;
+    }
 
-	@keyframes typing {
-	  from {
-		width: 0;
-	  }
-	  to {
-		width: 100%;
-	  }
-	}
+    .resume-wrap .date {
+      font-weight: 900;
+      font-size: 26px;
+      color: #ffbd39;
+    }
 
-	@keyframes typing-cursor {
-	  from {
-		width: 5px;
-	  }
-	  to {
-		width: 0;
-	  }
-	}
+    .resume-wrap h2 {
+      font-size: 26px;
+    }
 
-	.zoom-effect {
-	  overflow: hidden;
-	  transition: transform 0.3s ease-out;
-	}
+    .resume-wrap .position {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
 
-	.zoom-effect:hover {
-	  transform: scale(1.1);
-	}
+    .contact-section .box {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
 
-	.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-	  background: #00FFFF !important;
-	  border-color: #ffffff !important;
-	  color: #000000 !important;
-	}
+    @media (max-width: 991.98px) {
+      .contact-section .box {
+        margin-bottom: 30px;
+      }
+    }
 
-	.btn-primary:hover {
-	  background: #ffffff !important; 
-	  color: #000000 !important;
-	}
+    .contact-section .box .icon {
+      width: 100px;
+      height: 100px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 0 auto;
+      margin-bottom: 2em;
+      border-radius: 50%;
+    }
 
-	.subheading,
-	h1 span,
-	.text-primary,
-	.navbar-nav > .nav-item > .nav-link span:before,
-	.ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
-	.ftco-navbar-light.scrolled .nav-item.active > a,
-	.ftco-navbar-light.scrolled .nav-item.cta > a {
-	  color: #00FFFF !important;
-	}
+    .contact-section .box .icon span {
+      color: #ffbd39;
+      font-size: 30px;
+    }
 
-	.ftco-navbar-light.scrolled .nav-item.cta > a,
-	.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-	  border: 1px solid #00FFFF;
-	  background: #00FFFF;
-	}
+    .contact-section .box h3 {
+      font-size: 17px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
 
-	.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-	  border: 1px solid #00FFFF;
-	  background: #00FFFF !important;
-	}
+    .contact-section .contact-info p a {
+      color: #fff;
+    }
 
-	.slider-text .breadcrumbs span a:hover, 
-	.slider-text .breadcrumbs span a:focus,
-	.ftco-navbar-light .navbar-toggler:hover, 
-	.ftco-navbar-light .navbar-toggler:focus,
-	.comment-list li .comment-body .reply:hover {
-	  color: #00FFFF;
-	}
+    .contact-section .contact-form {
+      width: 100%;
+    }
 
-	.ftco-counter .ftco-number,
-	.ftco-footer-social li a:hover {
-	  background: #00FFFF !important;
-	}
+    @media (max-width: 767.98px) {
+      .contact-section .contact-form .btn-primary {
+        display: block;
+        width: 100%;
+      }
+    }
 
-	.services-1:hover {
-    background: #00FFFF !important; 
-  }
+    .block-21 .blog-img {
+      display: block;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
 
-  .services-1:hover .icon,
-  .services-1:hover .desc h3 {
-    background: none !important; 
-    color: #ffffff !important; 
-  }
-	.project:hover .overlay, 
-	.project .text h3 a:hover,
-	.block-27 ul li.active a, 
-	.block-27 ul li.active span {
-	  background: #00FFFF !important;
-	}
+    .block-21 .text {
+      width: calc(100% - 100px);
+    }
 
-	.resume-wrap .date {
-	  color: #00FFFF !important;
-	}
+    .block-21 .text .heading {
+      font-size: 18px;
+      font-weight: 300;
+    }
 
-	.services-1 .icon + .desc h3::after {
-	  background: #00FFFF !important;
-	}
+    .block-21 .text .heading a {
+      color: #fff;
+    }
 
-	.contact-info .icon {
-	  color: #00FFFF !important; 
-	}
+    .block-21 .text .heading a:hover,
+    .block-21 .text .heading a:active,
+    .block-21 .text .heading a:focus {
+      color: #ffbd39;
+    }
 
-	.btn-primary:hover {
-	  background: #ffffff !important; 
-	  color: #000000 !important; 
-	}
+    .block-21 .text .meta > div {
+      display: inline-block;
+      margin-right: 5px;
+    }
 
-	.subheading {
-	  color: #ffffff !important;
-	}
+    .block-21 .text .meta > div a {
+      color: #4d4d4d;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
 
-	#resumebtn:hover {
-	  background: #ffffff !important;
-	  color: #000000 !important;
-	}
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
 
-	#contactMeBtn:hover {
-	  background: #ffffff !important;
-	  color: #000000 !important;
-	}
+    #typing-animation:before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
 
-	.btn-primary.send-message-btn:hover {
-	  background: #ffffff !important;
-	  color: #000000 !important;
-	}
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
 
-	.navbar-toggler,
-	.navbar-nav .nav-link,
-	.navbar-nav .nav-item .nav-link {
-		color: #ffffff !important;
-	}
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+      to {
+        width: 0;
+      }
+    }
 
-	#about-section strong {
-    color: #00FFFF !important; 
-  }
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
 
-	.contact-info .box h3 {
-		color: #00FFFF !important;
-	}
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
 
-	.contact-info .box p {
-		color: #ffffff !important;
-	}
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+      background: #00FFFF !important;
+      border-color: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    .btn-primary:hover {
+      background: #ffffff !important; 
+      color: #000000 !important;
+    }
+
+    .subheading,
+    h1 span,
+    .text-primary,
+    .navbar-nav > .nav-item > .nav-link span:before,
+    .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
+    .ftco-navbar-light.scrolled .nav-item.active > a,
+    .ftco-navbar-light.scrolled .nav-item.cta > a {
+      color: #00FFFF !important;
+    }
+
+    .ftco-navbar-light.scrolled .nav-item.cta > a,
+    .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+      border: 1px solid #00FFFF;
+      background: #00FFFF;
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+      border: 1px solid #00FFFF;
+      background: #00FFFF !important;
+    }
+
+    .slider-text .breadcrumbs span a:hover, 
+    .slider-text .breadcrumbs span a:focus,
+    .ftco-navbar-light .navbar-toggler:hover, 
+    .ftco-navbar-light .navbar-toggler:focus,
+    .comment-list li .comment-body .reply:hover {
+      color: #00FFFF;
+    }
+
+    .ftco-counter .ftco-number,
+    .ftco-footer-social li a:hover {
+      background: #00FFFF !important;
+    }
+
+    .services-1:hover {
+      background: #00FFFF !important; 
+    }
+
+    .services-1:hover .icon,
+    .services-1:hover .desc h3 {
+      background: none !important; 
+      color: #ffffff !important; 
+    }
+
+    .project:hover .overlay, 
+    .project .text h3 a:hover,
+    .block-27 ul li.active a, 
+    .block-27 ul li.active span {
+      background: #00FFFF !important;
+    }
+
+    .resume-wrap .date {
+      color: #00FFFF !important;
+    }
+
+    .services-1 .icon + .desc h3::after {
+      background: #00FFFF !important;
+    }
+
+    .contact-info .icon {
+      color: #00FFFF !important; 
+    }
+
+    .btn-primary:hover {
+      background: #ffffff !important; 
+      color: #000000 !important; 
+    }
+
+    .subheading {
+      color: #ffffff !important;
+    }
+
+    #resumebtn:hover {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    #contactMeBtn:hover {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    .btn-primary.send-message-btn:hover {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    .navbar-toggler,
+    .navbar-nav .nav-link,
+    .navbar-nav .nav-item .nav-link {
+        color: #ffffff !important;
+    }
+
+    #about-section strong {
+      color: #00FFFF !important; 
+    }
+
+    .contact-info .box h3 {
+      color: #00FFFF !important;
+    }
+
+    .contact-info .box p {
+      color: #ffffff !important;
+    }
 </style>
 
 </head>
@@ -609,7 +725,7 @@
       </div>
     </section>
 
-	
+
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
     <script src="js/jquery.min.js"></script>
