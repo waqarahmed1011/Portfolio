@@ -27,342 +27,342 @@
     </script>
 
 <style>
-    /* Additional styles for responsiveness */
-    body, html {
-      overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
-    }
+  /* Additional styles for responsiveness */
+  body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
+  }
 
-    .container, .row, .resume-wrap, .contact-section, .block-21, .home-slider .owl-carousel, .home-slider .owl-stage-outer {
-      max-width: 100%; /* Ensure containers do not exceed viewport width */
-      overflow-x: hidden; /* Prevent any potential overflow within containers */
-    }
+  .container, .row, .resume-wrap, .contact-section, .block-21, .home-slider .owl-carousel, .home-slider .owl-stage-outer {
+    max-width: 100%; /* Ensure containers do not exceed viewport width */
+    overflow-x: hidden; /* Prevent any potential overflow within containers */
+  }
 
-    .resume-wrap {
-      width: 100%;
-      margin-bottom: 30px;
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 5px;
-    }
+  .resume-wrap {
+    width: 100%;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+  }
 
-    .resume-wrap .date {
-      font-weight: 900;
-      font-size: 26px;
-      color: #ffbd39;
-    }
+  .resume-wrap .date {
+    font-weight: 900;
+    font-size: 26px;
+    color: #ffbd39;
+  }
 
-    .resume-wrap h2 {
-      font-size: 26px;
-    }
+  .resume-wrap h2 {
+    font-size: 26px;
+  }
 
-    .resume-wrap .position {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
+  .resume-wrap .position {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #ffffff !important;
+  }
 
+  .resume-wrap .location {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    color: #ffffff !important;
+  }
+
+  .contact-section .box {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 991.98px) {
     .contact-section .box {
-      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .contact-section .box .icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+  }
+
+  .contact-section .box .icon span {
+    color: #ffbd39;
+    font-size: 30px;
+  }
+
+  .contact-section .box h3 {
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .contact-section .contact-info p a {
+    color: #fff;
+  }
+
+  .contact-section .contact-form {
+    width: 100%;
+  }
+
+  @media (max-width: 767.98px) {
+    .contact-section .contact-form .btn-primary {
       display: block;
-      border-radius: 4px;
-    }
-
-    @media (max-width: 991.98px) {
-      .contact-section .box {
-        margin-bottom: 30px;
-      }
-    }
-
-    .contact-section .box .icon {
-      width: 100px;
-      height: 100px;
-      background: rgba(255, 255, 255, 0.1);
-      margin: 0 auto;
-      margin-bottom: 2em;
-      border-radius: 50%;
-    }
-
-    .contact-section .box .icon span {
-      color: #ffbd39;
-      font-size: 30px;
-    }
-
-    .contact-section .box h3 {
-      font-size: 17px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-
-    .contact-section .contact-info p a {
-      color: #fff;
-    }
-
-    .contact-section .contact-form {
       width: 100%;
     }
+  }
 
-    @media (max-width: 767.98px) {
-      .contact-section .contact-form .btn-primary {
-        display: block;
-        width: 100%;
-      }
-    }
+  .block-21 .blog-img {
+    display: block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
 
-    .block-21 .blog-img {
-      display: block;
-      height: 80px;
-      width: 80px;
-      border-radius: 50%;
-    }
+  .block-21 .text {
+    width: calc(100% - 100px);
+  }
 
-    .block-21 .text {
-      width: calc(100% - 100px);
-    }
+  .block-21 .text .heading {
+    font-size: 18px;
+    font-weight: 300;
+  }
 
-    .block-21 .text .heading {
-      font-size: 18px;
-      font-weight: 300;
-    }
+  .block-21 .text .heading a {
+    color: #fff;
+  }
 
-    .block-21 .text .heading a {
-      color: #fff;
-    }
+  .block-21 .text .heading a:hover,
+  .block-21 .text .heading a:active,
+  .block-21 .text .heading a:focus {
+    color: #ffbd39;
+  }
 
-    .block-21 .text .heading a:hover,
-    .block-21 .text .heading a:active,
-    .block-21 .text .heading a:focus {
-      color: #ffbd39;
-    }
+  .block-21 .text .meta > div {
+    display: inline-block;
+    margin-right: 5px;
+  }
 
-    .block-21 .text .meta > div {
-      display: inline-block;
-      margin-right: 5px;
-    }
+  .block-21 .text .meta > div a {
+    color: #4d4d4d;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
 
-    .block-21 .text .meta > div a {
-      color: #4d4d4d;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-    }
+  #typing-animation {
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite;
+  }
 
-    #typing-animation {
-      position: relative;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 3s steps(20, end) infinite;
-    }
+  #typing-animation:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ccc;
+    animation: typing-cursor 0.5s ease-in-out infinite;
+  }
 
-    #typing-animation:before {
-      content: "";
-      top: 0;
-      left: 0;
+  @keyframes typing {
+    from {
       width: 0;
-      height: 100%;
-      background-color: #ccc;
-      animation: typing-cursor 0.5s ease-in-out infinite;
     }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
+    to {
+      width: 100%;
     }
+  }
 
-    @keyframes typing-cursor {
-      from {
-        width: 5px;
-      }
-      to {
-        width: 0;
-      }
+  @keyframes typing-cursor {
+    from {
+      width: 5px;
     }
-
-    .zoom-effect {
-      overflow: hidden;
-      transition: transform 0.3s ease-out;
+    to {
+      width: 0;
     }
+  }
 
-    .zoom-effect:hover {
-      transform: scale(1.1);
-    }
+  .zoom-effect {
+    overflow: hidden;
+    transition: transform 0.3s ease-out;
+  }
 
-    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
-      background: #00FFFF !important;
-      border-color: #ffffff !important;
-      color: #000000 !important;
-    }
+  .zoom-effect:hover {
+    transform: scale(1.1);
+  }
 
-    .btn-primary:hover {
-      background: #ffffff !important; 
-      color: #000000 !important;
-    }
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background: #00FFFF !important;
+    border-color: #ffffff !important;
+    color: #000000 !important;
+  }
 
-    .subheading,
-    h1 span,
-    .text-primary,
-    .navbar-nav > .nav-item > .nav-link span:before,
-    .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
-    .ftco-navbar-light.scrolled .nav-item.active > a,
-    .ftco-navbar-light.scrolled .nav-item.cta > a {
-      color: #00FFFF !important;
-    }
+  .btn-primary:hover {
+    background: #ffffff !important; 
+    color: #000000 !important;
+  }
 
-    .ftco-navbar-light.scrolled .nav-item.cta > a,
-    .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-      border: 1px solid #00FFFF;
-      background: #00FFFF;
-    }
+  .subheading,
+  h1 span,
+  .text-primary,
+  .navbar-nav > .nav-item > .nav-link span:before,
+  .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active,
+  .ftco-navbar-light.scrolled .nav-item.active > a,
+  .ftco-navbar-light.scrolled .nav-item.cta > a {
+    color: #00FFFF !important;
+  }
 
-    .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-      border: 1px solid #00FFFF;
-      background: #00FFFF !important;
-    }
+  .ftco-navbar-light.scrolled .nav-item.cta > a,
+  .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+    border: 1px solid #00FFFF;
+    background: #00FFFF;
+  }
 
-    .slider-text .breadcrumbs span a:hover, 
-    .slider-text .breadcrumbs span a:focus,
-    .ftco-navbar-light .navbar-toggler:hover, 
-    .ftco-navbar-light .navbar-toggler:focus,
-    .comment-list li .comment-body .reply:hover {
-      color: #00FFFF;
-    }
+  .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
+    border: 1px solid #00FFFF;
+    background: #00FFFF !important;
+  }
 
-    .ftco-counter .ftco-number,
-    .ftco-footer-social li a:hover {
-      background: #00FFFF !important;
-    }
+  .slider-text .breadcrumbs span a:hover, 
+  .slider-text .breadcrumbs span a:focus,
+  .ftco-navbar-light .navbar-toggler:hover, 
+  .ftco-navbar-light .navbar-toggler:focus,
+  .comment-list li .comment-body .reply:hover {
+    color: #00FFFF;
+  }
 
-    .services-1:hover {
-      background: #00FFFF !important; 
-    }
+  .ftco-counter .ftco-number,
+  .ftco-footer-social li a:hover {
+    background: #00FFFF !important;
+  }
 
-    .services-1:hover .icon,
-    .services-1:hover .desc h3 {
-      background: none !important; 
-      color: #ffffff !important; 
-    }
+  .services-1:hover {
+    background: #00FFFF !important; 
+  }
 
-    .project:hover .overlay, 
-    .project .text h3 a:hover,
-    .block-27 ul li.active a, 
-    .block-27 ul li.active span {
-      background: #00FFFF !important;
-    }
+  .services-1:hover .icon,
+  .services-1:hover .desc h3 {
+    background: none !important; 
+    color: #ffffff !important; 
+  }
 
-    .resume-wrap .date {
-      color: #00FFFF !important;
-    }
+  .project:hover .overlay, 
+  .project .text h3 a:hover,
+  .block-27 ul li.active a, 
+  .block-27 ul li.active span {
+    background: #00FFFF !important;
+  }
 
-    .services-1 .icon + .desc h3::after {
-      background: #00FFFF !important;
-    }
+  .resume-wrap .date {
+    color: #00FFFF !important;
+  }
 
-    .contact-info .icon {
-      color: #00FFFF !important; 
-    }
+  .services-1 .icon + .desc h3::after {
+    background: #00FFFF !important;
+  }
 
-    .btn-primary:hover {
-      background: #ffffff !important; 
-      color: #000000 !important; 
-    }
+  .contact-info .icon {
+    color: #00FFFF !important; 
+  }
 
-    .subheading {
+  .btn-primary:hover {
+    background: #ffffff !important; 
+    color: #000000 !important; 
+  }
+
+  .subheading {
+    color: #ffffff !important;
+  }
+
+  #resumebtn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    outline-color: #ffffff !important;;
+  }
+
+  #contactMeBtn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  #githubBtn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    outline-color: #ffffff !important;;
+  }
+
+  .btn-primary.send-message-btn:hover {
+    background: #ffffff !important;
+    color: #000000 !important;
+    outline-color: #ffffff !important;;
+  }
+
+  .navbar-toggler,
+  .navbar-nav .nav-link,
+  .navbar-nav .nav-item .nav-link {
       color: #ffffff !important;
-    }
+  }
 
-    #resumebtn:hover {
-      background: #ffffff !important;
-      color: #000000 !important;
-	  outline-color: #ffffff !important;;
-    }
+  #about-section strong {
+    color: #00FFFF !important; 
+  }
 
-    #contactMeBtn:hover {
-      background: #ffffff !important;
-      color: #000000 !important;
-    }
+  .contact-info .box h3 {
+    color: #00FFFF !important;
+  }
 
-	#githubBtn:hover {
-      background: #ffffff !important;
-      color: #000000 !important;
-	  outline-color: #ffffff !important;;
+  .contact-info .box p {
+    color: #ffffff !important;
+  }
 
-    }
+  /* Centering paragraphs in the About Me section */
+  #about-section p {
+    text-align: center;
+    color: #ffffff;
+  }
 
-    .btn-primary.send-message-btn:hover {
-      background: #ffffff !important;
-      color: #000000 !important;
-	  outline-color: #ffffff !important;;
-    }
+  #ftco-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Make sure the navbar is above other content */
+    background-color: rgba(0, 0, 0, 0.8); /* Set background to make the navbar visible */
+  }
 
-	
+  /* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
+  body {
+    margin-top: 80px; /* Adjust based on the height of the navbar */
+  }
 
-    .navbar-toggler,
-    .navbar-nav .nav-link,
-    .navbar-nav .nav-item .nav-link {
-        color: #ffffff !important;
-    }
+  /* Change menu options to cyan on hover */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #00FFFF !important;
+  }
 
-    #about-section strong {
-      color: #00FFFF !important; 
-    }
+  .highlight {
+      font-weight: bold;
+      color: #00FFFF; /* Cyan color */
+  }
 
-    .contact-info .box h3 {
-      color: #00FFFF !important;
-    }
-
-    .contact-info .box p {
+  .resume-wrap p, .resume-wrap .position, .resume-wrap .location {
       color: #ffffff !important;
-    }
-
-	    /* Centering paragraphs in the About Me section */
-	#about-section p {
-      text-align: center;
-      color: #ffffff;
-
-	
-    }
-
-    #ftco-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030; /* Make sure the navbar is above other content */
-}
-
-/* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
-body {
-  margin-top: 80px; /* Adjust based on the height of the navbar */
-}
-
-/* Change menu options to cyan on hover */
-.navbar-nav .nav-item .nav-link:hover {
-  color: #00FFFF !important;
-}
-
-#ftco-navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1030; /* Make sure the navbar is above other content */
-  background-color: rgba(0, 0, 0, 0.8); /* Set background to make the navbar visible */
-}
-
-/* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
-body {
-  margin-top: 80px; /* Adjust based on the height of the navbar */
-}
-
-
-    
+  }
+  
 </style>
+
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -415,7 +415,7 @@ body {
                     const typingAnimationElement = document.getElementById('typing-animation');
                     const typingTexts = [
                       'Student at UIC    ',
-                      'Aspiring Software Engineer    ',
+                      'Aspiring SWE    ',
                       'Fullstack Developer    ',
                     ];
 
@@ -484,31 +484,49 @@ body {
             <div class="resume-wrap ftco-animate">
               <span class="date">June 2024 – Present</span>
               <h2>Full-Stack Developer Intern</h2>
-              <span class="position">BTG Construction Inc</span>
+              <span class="position">BTG Construction Inc -</span>
               <span class="location">Chicago, IL</span>
-              <p class="mt-4">Developed and deployed the company's full stack web application using React, Node.js, and MongoDB, providing a seamless experience with efficient data management.</p>
-              <p>Created responsive, user-friendly interfaces with HTML, CSS, and JavaScript frameworks, that enabled users to access detailed project information and easily schedule consultations.</p>
-              <p>Coordinated with sales and cross-functional teams to gather project requirements, design intuitive user interfaces, and deliver scalable web solutions aligned with business needs on schedule.</p>
+              <p class="mt-4">
+                <span class="highlight">Developed</span> and deployed the company's <span class="highlight">full stack</span> web application using <span class="highlight">React</span>, <span class="highlight">Node.js</span>, and <span class="highlight">MongoDB</span>, providing a seamless experience with <span class="highlight">efficient</span> data management.
+              </p>
+              <p>
+                <span class="highlight">Created</span> responsive, user-friendly interfaces with <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span> frameworks, that enabled users to access detailed project information and <span class="highlight">easily</span> schedule consultations.
+              </p>
+              <p>
+                <span class="highlight">Coordinated</span> with sales and cross-functional teams to gather project requirements, <span class="highlight">design</span> intuitive user interfaces, and <span class="highlight">boost</span> the application's <span class="highlight">SEO</span> (search engine optimization).
+              </p>
             </div>
-
+  
             <div class="resume-wrap ftco-animate">
               <span class="date">Dec 2023 – May 2024</span>
               <h2>Software Engineering Intern</h2>
-              <span class="position">Boosted Biz</span>
+              <span class="position">Boosted Biz -</span>
               <span class="location">Chicago, IL</span>
-              <p class="mt-4">Collaborated with a team of 3 in the software development department at Boosted Biz, focusing on both front and backend solutions for a range of business applications.</p>
-              <p>Built backend functionality using JavaScript, SQL, and Python, optimizing database management and implementing efficient API integrations.</p>
-              <p>Developed an AI chatbot using Python, JavaScript, CSS, and Angular, designed to assist users with order inquiries and product recommendations, significantly improving user engagement and customer satisfaction.</p>
+              <p class="mt-4">
+                <span class="highlight">Collaborated</span> with a team of 3 in the <span class="highlight">software development</span> department at Boosted Biz, focusing on both <span class="highlight">front</span> and <span class="highlight">backend</span> solutions for a range of business applications.
+              </p>
+              <p>
+                <span class="highlight">Built</span> <span class="highlight">backend</span> functionality using <span class="highlight">JavaScript</span>, <span class="highlight">SQL</span>, and <span class="highlight">Python</span>, optimizing database management and implementing efficient <span class="highlight">API integrations</span>.
+              </p>
+              <p>
+                <span class="highlight">Developed</span> an <span class="highlight">AI chatbot</span> using <span class="highlight">Python</span>, <span class="highlight">JavaScript</span>, <span class="highlight">CSS</span>, and <span class="highlight">Angular</span>, designed to <span class="highlight">assist</span> users with order inquiries and product recommendations, <span class="highlight">significantly improving</span> user engagement and <span class="highlight">customer satisfaction.</span>
+              </p>
             </div>
-
+  
             <div class="resume-wrap ftco-animate">
               <span class="date">Aug 2023 – Present</span>
               <h2>Undergraduate Teaching Assistant</h2>
-              <span class="position">University of Illinois at Chicago</span>
+              <span class="position">University of Illinois at Chicago -</span>
               <span class="location">Chicago, IL</span>
-              <p class="mt-4">Designed interactive MATLAB lesson plans using Zybooks for 250+ students, covering matrices, data types, operators, arrays, structures, and more, resulting in an improved understanding of core programming concepts.</p>
-              <p>Provided personalized office hours in person and over zoom to address student challenges, improving course comprehension and program design skills.</p>
-              <p>Proctored lab sessions, by giving small lectures, illustrating concepts on the board, and providing real-time coding assistance and troubleshooting support to 50+ students.</p>
+              <p class="mt-4">
+                <span class="highlight">Designed</span> interactive <span class="highlight">MATLAB</span> lesson plans using Zybooks for <span class="highlight">250+ students</span>, covering matrices, data types, operators, arrays, structures, and more, resulting in an <span class="highlight">improved understanding</span> of core <span class="highlight">programming</span> concepts.
+              </p>
+              <p>
+                <span class="highlight">Provided</span> personalized <span class="highlight">office hours</span> in person and over zoom to address student challenges, and <span class="highlight">assisted</span> them in <span class="highlight">completing</span> their <span class="highlight">projects</span> by the specified deadlines.
+              </p>
+              <p>
+                <span class="highlight">Proctored lab</span> sessions, by giving <span class="highlight">small lectures</span>, <span class="highlight">illustrating</span> concepts on the <span class="highlight">board</span>, providing <span class="highlight">real-time coding assistance</span> and troubleshooting support to <span class="highlight">50+ students</span>.
+              </p>
             </div>
           </div>
         </div>
@@ -519,6 +537,7 @@ body {
         </div>
       </div>
     </section>
+  </body>
 
 	<section class="ftco-section" id="services-section">
 		<div class="container">
@@ -615,9 +634,8 @@ body {
 		<div class="container">
 		  <div class="row justify-content-center pb-5">
 			<div class="col-md-12 heading-section text-center ftco-animate">
-			  <h1 class="big big-2">Projects</h1>
-			  <h2 class="mb-4">Projects</h2>
-			  <p>Some of the projects that I have worked on</p>
+			  <h1 class="big big-2">My Projects</h1>
+			  <h2 class="mb-4">My Projects</h2>
 			</div>
 		  </div>
 		  <div class="row">
