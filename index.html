@@ -26,6 +26,8 @@
     gtag('config', 'G-Z36H221KFN');
     </script>
 
+    
+
 <style>
   /* Additional styles for responsiveness */
   body, html {
@@ -371,7 +373,33 @@
     color: #ffffff !important;
 }
 
+.contact-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff; /* Adjust the color as needed */
+}
+
+/* Sliding form effect */
+.form-container {
+  position: relative;
+  overflow: hidden;
+  opacity: 0; /* Start with the form hidden */
+  transform: translateX(100%); /* Position the form off-screen to the right */
+  animation: slideIn 1s forwards;
+  animation-delay: 0.5s; /* Optional: Add a delay before the animation starts */
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0); /* Move form to its original position */
+    opacity: 1; /* Make the form visible */
+  }
+}
+
 </style>
+
+
 
 
 </head>
@@ -764,59 +792,62 @@
         </div>
 
 
-		<div class="row no-gutters block-9 mb-5">
-			<div class="col-md-6 order-md-last d-flex align-items-center justify-content-center" style="height: 400px;">
-			  <form action="https://formspree.io/f/xldrbnla" method="POST" class="bg-light p-4 p-md-5 contact-form" style="width: 100%; padding-bottom: 20px;"> <!-- Added padding-bottom -->
-				<input type="hidden" name="_subject" value="New submission from your portfolio website">
-				<div class="form-group">
-				  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-				</div>
-				<div class="form-group">
-				  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-				</div>
-				<div class="form-group">
-				  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-				</div>
-				<div class="form-group">
-				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
-				</div>
-			  </form>
+        <div class="row no-gutters block-9 mb-5">
+          <div class="col-md-12 text-center">
+            <h2 class="contact-title">Let's get in touch!</h2>
+          </div>
+          <div class="col-md-6 order-md-last d-flex align-items-center justify-content-center form-container">
+            <form action="https://formspree.io/f/xldrbnla" method="POST" class="bg-light p-4 p-md-5 contact-form" style="width: 100%; padding-bottom: 20px;">
+              <input type="hidden" name="_subject" value="New submission from your portfolio website">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
+              </div>
+            </form>
+        
+            <p class="thank-you" style="display:none;">Thank you for your message! I will get back to you shortly!</p>
+        
+            <script>
+              document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                fetch(this.action, {
+                  method: 'POST',
+                  body: new FormData(this),
+                  headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                  if (response.ok) {
+                    this.reset();
+                    document.querySelector('.thank-you').style.display = 'block';
+                  } else {
+                    response.json().then(data => {
+                      if (Object.hasOwn(data, 'errors')) {
+                        alert(data["errors"].map(error => error["message"]).join(", "));
+                      } else {
+                        alert("Oops! There was a problem submitting the form");
+                      }
+                    })
+                  }
+                }).catch(error => {
+                  alert("Oops! There was a problem submitting your form");
+                });
+              });
+            </script>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center" style="height: 450px; margin-top: 20px;">
+            <div class="img" style="background-image: url(images/pp10.jpeg); width: 100%; height: auto; max-width: 400px;"></div>
+          </div>
+        </div>
 
-			<p class="thank-you" style="display:none;">Thank you for your message! I will get back to you shortly!</p>
-
-			<script>
-			document.querySelector('form').addEventListener('submit', function(e) {
-				e.preventDefault();
-				fetch(this.action, {
-				method: 'POST',
-				body: new FormData(this),
-				headers: { 'Accept': 'application/json' }
-				}).then(response => {
-				if (response.ok) {
-					this.reset();
-					document.querySelector('.thank-you').style.display = 'block';
-				} else {
-					response.json().then(data => {
-					if (Object.hasOwn(data, 'errors')) {
-						alert(data["errors"].map(error => error["message"]).join(", "));
-					} else {
-						alert("Oops! There was a problem submitting the form");
-					}
-					})
-				}
-				}).catch(error => {
-				alert("Oops! There was a problem submitting your form");
-				});
-			});
-			</script>
-
-			</div>
-			<div class="col-md-6 d-flex justify-content-center" style="height: 450px; margin-top: 20px;"> <!-- Added margin-top -->
-			<div class="img" style="background-image: url(images/pp10.jpeg); width: 100%; height: auto; max-width: 400px;"></div>
-			</div>
-			</div>
-
-	</div>
+        
+        
 
 
   
@@ -845,6 +876,7 @@
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
     <script>
+
 
 	//top contact button functionality
       $(document).ready(function(){
