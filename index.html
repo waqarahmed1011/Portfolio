@@ -329,25 +329,70 @@
 
 	
     }
+
+    #ftco-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Make sure the navbar is above other content */
+}
+
+/* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
+body {
+  margin-top: 80px; /* Adjust based on the height of the navbar */
+}
+
+/* Change menu options to cyan on hover */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #00FFFF !important;
+}
+
+#ftco-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; /* Make sure the navbar is above other content */
+  background-color: rgba(0, 0, 0, 0.8); /* Set background to make the navbar visible */
+}
+
+/* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
+body {
+  margin-top: 80px; /* Adjust based on the height of the navbar */
+}
+
+
+    
 </style>
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-      <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
         <a class="navbar-brand" href="index.html">Waqar Ahmed</a>
         <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+          <a class="navbar-brand" href="#menu-section" style="font-size: 14px; font-weight: normal; display: flex; align-items: center;">
+            <div style="display: flex; flex-direction: column; margin-right: 8px;">
+              <span style="display: inline-block; width: 14px; height: 2px; background-color: white; margin-bottom: 2px;"></span>
+              <span style="display: inline-block; width: 14px; height: 2px; background-color: white; margin-bottom: 2px;"></span>
+              <span style="display: inline-block; width: 14px; height: 2px; background-color: white;"></span>
+            </div>
+            Menu
+          </a>
+        </button>
+
+          
+        
+          <!-- <span class="oi oi-menu"></span> Menu -->
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>My Experiences</span></a></li>
-            <li class="nav-item"><a href="#services-section" class="nav-link"><span>Skills</span></a></li>
-            <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            <li class="nav-item"><a href="#home-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>My Experiences</span></a></li>
+            <li class="nav-item"><a href="#services-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Skills</span></a></li>
+            <li class="nav-item"><a href="#projects-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Contact</span></a></li>
           </ul>
         </div>
       </div>
