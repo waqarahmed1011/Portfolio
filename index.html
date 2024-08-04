@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    <!-- Google Fonts and CSS Links -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -16,27 +17,25 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Analytics Tag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z36H221KFN"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-Z36H221KFN');
     </script>
 
-    
-
 <style>
-  /* Additional styles for responsiveness */
+  /* Global Styles */
   body, html {
-    overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
+    overflow-x: hidden; 
   }
 
   .container, .row, .resume-wrap, .contact-section, .block-21, .home-slider .owl-carousel, .home-slider .owl-stage-outer {
-    max-width: 100%; /* Ensure containers do not exceed viewport width */
-    overflow-x: hidden; /* Prevent any potential overflow within containers */
+    max-width: 100%; 
+    overflow-x: hidden; 
   }
 
   .resume-wrap {
@@ -45,12 +44,6 @@
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 5px;
-  }
-
-  .resume-wrap .date {
-    font-weight: 900;
-    font-size: 26px;
-    color: #ffbd39;
   }
 
   .resume-wrap h2 {
@@ -94,11 +87,6 @@
     border-radius: 50%;
   }
 
-  .contact-section .box .icon span {
-    color: #ffbd39;
-    font-size: 30px;
-  }
-
   .contact-section .box h3 {
     font-size: 17px;
     font-weight: 500;
@@ -140,12 +128,6 @@
     color: #fff;
   }
 
-  .block-21 .text .heading a:hover,
-  .block-21 .text .heading a:active,
-  .block-21 .text .heading a:focus {
-    color: #ffbd39;
-  }
-
   .block-21 .text .meta > div {
     display: inline-block;
     margin-right: 5px;
@@ -159,6 +141,7 @@
     font-weight: 600;
   }
 
+  /* Typing Animation Styles */
   #typing-animation {
     position: relative;
     font-size: 30px;
@@ -206,6 +189,7 @@
     transform: scale(1.1);
   }
 
+  /* Button Styles */
   .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background: #00FFFF !important;
     border-color: #ffffff !important;
@@ -225,17 +209,6 @@
   .ftco-navbar-light.scrolled .nav-item.active > a,
   .ftco-navbar-light.scrolled .nav-item.cta > a {
     color: #00FFFF !important;
-  }
-
-  .ftco-navbar-light.scrolled .nav-item.cta > a,
-  .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    border: 1px solid #00FFFF;
-    background: #00FFFF;
-  }
-
-  .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-    border: 1px solid #00FFFF;
-    background: #00FFFF !important;
   }
 
   .slider-text .breadcrumbs span a:hover, 
@@ -292,7 +265,7 @@
   #resumebtn:hover {
     background: #ffffff !important;
     color: #000000 !important;
-    outline-color: #ffffff !important;;
+    outline-color: #ffffff !important;
   }
 
   #contactMeBtn:hover {
@@ -303,20 +276,15 @@
   #githubBtn:hover {
     background: #ffffff !important;
     color: #000000 !important;
-    outline-color: #ffffff !important;;
+    outline-color: #ffffff !important;
   }
 
   .btn-primary.send-message-btn:hover {
     background: #ffffff !important;
     color: #000000 !important;
-    outline-color: #ffffff !important;;
+    outline-color: #ffffff !important;
   }
 
-  .navbar-toggler,
-  .navbar-nav .nav-link,
-  .navbar-nav .nav-item .nav-link {
-      color: #ffffff !important;
-  }
 
   #about-section strong {
     color: #00FFFF !important; 
@@ -330,7 +298,6 @@
     color: #ffffff !important;
   }
 
-  /* Centering paragraphs in the About Me section */
   #about-section p {
     text-align: center;
     color: #ffffff;
@@ -340,33 +307,24 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1030; /* Make sure the navbar is above other content */
-    background-color: rgba(0, 0, 0, 0.8); /* Set background to make the navbar visible */
+    z-index: 1030;
+    background-color: rgba(0, 0, 0, 0.8); 
   }
 
-  /* Ensure the body has a top margin to avoid content hiding behind the fixed navbar */
   body {
-    margin-top: 80px; /* Adjust based on the height of the navbar */
+    margin-top: 80px;
   }
 
-  /* Change menu options to cyan on hover */
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #00FFFF !important;
-  }
 
   .highlight {
       font-weight: bold;
-      color: #00FFFF; /* Cyan color */
+      color: #00FFFF; 
   }
 
   .resume-wrap p, .resume-wrap .position, .resume-wrap .location {
       color: #ffffff !important;
   }
   
-  .navbar-nav .nav-item .nav-link {
-    color: #ffffff !important;
-}
-
 .navbar-nav .nav-item .nav-link:hover,
 .navbar-nav .nav-item .nav-link:focus,
 .navbar-nav .nav-item .nav-link.active {
@@ -377,33 +335,31 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffffff; /* Adjust the color as needed */
+  color: #ffffff; 
 }
 
-/* Sliding form effect */
+/* Form animation styles */
 .form-container {
   position: relative;
   overflow: hidden;
-  opacity: 0; /* Start with the form hidden */
-  transform: translateX(100%); /* Position the form off-screen to the right */
+  opacity: 0; 
+  transform: translateX(100%); 
   animation: slideIn 1s forwards;
-  animation-delay: 0.5s; /* Optional: Add a delay before the animation starts */
+  animation-delay: 3.0s;
 }
 
 @keyframes slideIn {
   to {
-    transform: translateX(0); /* Move form to its original position */
-    opacity: 1; /* Make the form visible */
+    transform: translateX(0); 
+    opacity: 1;
   }
 }
 
 </style>
 
-
-
-
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
     <div class="container">
         <a class="navbar-brand" href="index.html">Waqar Ahmed</a>
@@ -417,12 +373,6 @@
             Menu
           </a>
         </button>
-
-          
-        
-          <!-- <span class="oi oi-menu"></span> Menu -->
-        </button>
-
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
             <li class="nav-item"><a href="#home-section" class="nav-link" data-toggle="collapse" data-target="#ftco-nav"><span>Home</span></a></li>
@@ -435,13 +385,14 @@
         </div>
       </div>
     </nav>
+
+    <!-- Home Section -->
     <section id="home-section" class="hero">
       <div class="home-slider owl-carousel">
         <div class="slider-item">
           <div class="overlay"></div>
           <div class="container">
             <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-				<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/pp3.jpeg);"></div> -->
               <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                 <div class="text">
                   <span class="subheading">Hello!</span>
@@ -450,6 +401,7 @@
                   <span id="typing-animation"></span>
 
                   <script>
+                    // Typing animation for the text
                     const typingAnimationElement = document.getElementById('typing-animation');
                     const typingTexts = [
                       'Student at UIC    ',
@@ -478,7 +430,7 @@
                   <br>
 
                   <p>
-                    <a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a>
+                    <a href="Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a>
                     <a href="#contact-section" class="btn btn-white btn-outline-white py-3 px-4" id="contactMeBtn">Contact Me</a>
                   </p>
                 </div>
@@ -489,6 +441,7 @@
       </div>
     </section>
 
+    <!-- About Me Section -->
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
 		<div class="container">
 		  <div class="row justify-content-center pb-3">
@@ -507,19 +460,21 @@
 			</div>
 		  </div>
 		</div>
-	  </section>
+	</section>
 
+    <!-- Experience Section -->
     <section class="ftco-section ftco-no-pb" id="resume-section">
       <div class="container">
         <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
             <h1 class="big big-2">My Experiences</h1>
             <h2 class="mb-4">My Experiences</h2>
-            <p>A passionate software developer always looking for opportunities to grow my skills and knowledge in the industry.</p>
+            <p>I am a passionate software developer always looking for opportunities to grow my skills and knowledge in the industry.</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
+            <!-- Full-Stack Developer Intern Experience -->
             <div class="resume-wrap ftco-animate">
               <span class="date">June 2024 – Present</span>
               <h2>Full-Stack Developer Intern</h2>
@@ -535,7 +490,8 @@
                 <span class="highlight">Coordinated</span> with sales and cross-functional teams to gather project requirements, <span class="highlight">design</span> intuitive user interfaces, and <span class="highlight">boost</span> the application's <span class="highlight">SEO</span> (search engine optimization).
               </p>
             </div>
-  
+
+            <!-- Software Engineering Intern Experience -->
             <div class="resume-wrap ftco-animate">
               <span class="date">Dec 2023 – May 2024</span>
               <h2>Software Engineering Intern</h2>
@@ -551,7 +507,8 @@
                 <span class="highlight">Developed</span> an <span class="highlight">AI chatbot</span> using <span class="highlight">Python</span>, <span class="highlight">JavaScript</span>, <span class="highlight">CSS</span>, and <span class="highlight">Angular</span>, designed to <span class="highlight">assist</span> users with order inquiries and product recommendations, <span class="highlight">significantly improving</span> user engagement and <span class="highlight">customer satisfaction.</span>
               </p>
             </div>
-  
+
+            <!-- Undergraduate Teaching Assistant Experience -->
             <div class="resume-wrap ftco-animate">
               <span class="date">Aug 2023 – Present</span>
               <h2>Undergraduate Teaching Assistant</h2>
@@ -571,13 +528,13 @@
         </div>
         <div class="row justify-content-center mt-5">
           <div class="col-md-6 text-center ftco-animate">
-            <p><a href="assets/Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a></p>
+            <p><a href="Waqar_Ahmed_Resume.pdf" target="_blank" class="btn btn-primary py-3 px-4" id="resumebtn">Resume</a></p>
           </div>
         </div>
       </div>
     </section>
-  </body>
 
+    <!-- Skills Section -->
 	<section class="ftco-section" id="services-section">
 		<div class="container">
 		  <div class="row justify-content-center py-5 mt-5">
@@ -587,11 +544,12 @@
 			</div>
 		  </div>
 		  <div class="row">
+			<!-- Skill: React.js -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://react.dev/" target="_blank">
 				  <span class="icon">
-					<img src="images/react11.png" alt="React.js" style="width: 50px;">
+					<img src="images/react11.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">React.js</h3>
@@ -599,11 +557,12 @@
 				</a>
 			  </div>
 			</div>
+			<!-- Skill: Next.js -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://nextjs.org/" target="_blank">
 				  <span class="icon">
-					<img src="images/next15.png" alt="Next.js" style="width: 50px;">
+					<img src="images/next15.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">Next.js</h3>
@@ -611,11 +570,12 @@
 				</a>
 			  </div>
 			</div>
+			<!-- Skill: Java -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://www.oracle.com/java/" target="_blank">
 				  <span class="icon">
-					<img src="images/java2.png" alt="Java" style="width: 50px;">
+					<img src="images/java2.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">Java</h3>
@@ -623,11 +583,12 @@
 				</a>
 			  </div>
 			</div>
+			<!-- Skill: Python -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://www.python.org/" target="_blank">
 				  <span class="icon">
-					<img src="images/python7.png" alt="Python" style="width: 50px;">
+					<img src="images/python7.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">Python</h3>
@@ -635,23 +596,25 @@
 				</a>
 			  </div>
 			</div>
+			<!-- Skill: C++ -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://cplusplus.com/" target="_blank">
 				  <span class="icon">
-					<img src="images/c++4.png" alt="C++" style="width: 50px;">
+					<img src="images/c++4.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">C++</h3>
 				  </div>
 				</a>
 			  </div>
-			</div>
+			 </div>
+			<!-- Skill: Tailwind -->
 			<div class="col-md-4 text-center d-flex ftco-animate">
 			  <div class="services-1">
 				<a href="https://tailwindcss.com/" target="_blank">
 				  <span class="icon">
-					<img src="images/tailwind.png" alt="Tailwind" style="width: 50px;">
+					<img src="images/tailwind.png" alt="Waqar Ahmed" style="width: 50px;">
 				  </span>
 				  <div class="desc">
 					<h3 class="mb-5">Tailwind</h3>
@@ -666,9 +629,9 @@
 			</div>
 		  </div>
 		</div>
-	  </section>
+	</section>
 	  
-
+    <!-- Projects Section -->
 	<section class="ftco-section ftco-project" id="projects-section">
 		<div class="container">
 		  <div class="row justify-content-center pb-5">
@@ -678,70 +641,67 @@
 			</div>
 		  </div>
 		  <div class="row">
-			<!-- Top Row -->
+			<!-- Project: Real Estate Predictor App -->
 			<div class="col-md-4">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/house1.jpg);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Real Estate Predictor App</a></h3>
-				  <!-- <span>Python, Django, Scikit-learn, Pandas, Numpy, Matplotlib, HTML/CSS, JavaScript</span> -->
 				</div>
 			  </div>
 			</div>
+			<!-- Project: Automated AI Crypto Trading Bot -->
 			<div class="col-md-8">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/crypto2.webp);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Automated AI Crypto Trading Bot</a></h3>
-				  <!-- <span>HTML/CSS, JavaScript, Node.js, MongoDB, Python, Scikit-learn</span> -->
 				</div>
 			  </div>
 			</div>
 	  
-			<!-- Middle Row -->
+			<!-- Project: Welcome to Chicago App -->
 			<div class="col-md-8">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chicagoo3.png);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Welcome to Chicago App</a></h3>
-				  <!-- <span>test</span> -->
 				</div>
 			  </div>
 			</div>
+			<!-- Project: Kids Educational Shapes App -->
 			<div class="col-md-4">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/shapes6.jpg);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Kids Educational Shapes App</a></h3>
-				  <!-- <span>Machine Learning</span> -->
 				</div>
 			  </div>
 			</div>
 	  
-			<!-- Bottom Row -->
+			<!-- Project: Movies Library App -->
 			<div class="col-md-4">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/movies9.avif);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Movies Library App</a></h3>
-				  <!-- <span>Full-stack Development</span> -->
 				</div>
 			  </div>
 			</div>
+			<!-- Project: Daily Motivational Quotes App -->
 			<div class="col-md-8">
 			  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/quotes11.jpg);">
 				<div class="overlay"></div>
 				<div class="text text-center p-4">
 				  <h3><a href="#">Daily Motivational Quotes App</a></h3>
-				  <!-- <span>Machine Learning</span> -->
 				</div>
 			  </div>
 			</div>
 		  </div>
 		</div>
-	  </section>
-	  
+	</section>
 
+    <!-- Contact Section -->
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -753,37 +713,41 @@
         </div>
 
         <div class="row d-flex contact-info mb-5">
+          <!-- LinkedIn Contact Info -->
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
-                <img src="images/linkedin5.png" alt="Tailwind" style="width: 35px;">
+                <img src="images/linkedin5.png" alt="Waqar Ahmed" style="width: 35px;">
               </div>
               <h3 class="mb-4">LinkedIn</h3>
               <p><a href="https://www.linkedin.com/in/waqar-ahmed1011" target="_blank">linkedin.com/in/waqar-ahmed1011</a></p>
             </div>
           </div>
+          <!-- GitHub Contact Info -->
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
-                <img src="images/github6.png" alt="Tailwind" style="width: 50px;">
+                <img src="images/github6.png" alt="Waqar Ahmed" style="width: 50px;">
               </div>
               <h3 class="mb-4">Github</h3>
               <p><a href="https://github.com/waqarahmed1011" target="_blank">github.com/waqarahmed1011</a></p>
             </div>
           </div>
+          <!-- Email Contact Info -->
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
-                <img src="images/mail4.png" alt="Tailwind" style="width: 50px;">
+                <img src="images/mail4.png" alt="Waqar Ahmed" style="width: 50px;">
               </div>
               <h3 class="mb-4">Email Address</h3>
               <p><a href="mailto:waqar.ah1011@gmail.com">waqar.ah1011@gmail.com</a></p>
             </div>
           </div>
+          <!-- Phone Contact Info -->
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
             <div class="align-self-stretch box p-4 text-center">
               <div class="icon d-flex align-items-center justify-content-center">
-                <img src="images/phone4.png" alt="Tailwind" style="width: 60px;">
+                <img src="images/phone4.png" alt="Waqar Ahmed" style="width: 60px;">
               </div>
               <h3 class="mb-4">Contact Number</h3>
               <p><a href="tel://7737861127">773-786-1127</a></p>
@@ -791,7 +755,7 @@
           </div>
         </div>
 
-
+        <!-- Contact Form -->
         <div class="row no-gutters block-9 mb-5">
           <div class="col-md-12 text-center">
             <h2 class="contact-title">Let's get in touch!</h2>
@@ -812,10 +776,11 @@
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-4" id="resumebtn">
               </div>
             </form>
-        
+
             <p class="thank-you" style="display:none;">Thank you for your message! I will get back to you shortly!</p>
         
             <script>
+              // Form submission handling
               document.querySelector('form').addEventListener('submit', function(e) {
                 e.preventDefault();
                 fetch(this.action, {
@@ -846,22 +811,18 @@
           </div>
         </div>
 
-        
-        
-
-
-  
-
-		<div class="row">
-		<div class="col-md-12 text-center">
-			<p>&copy;</script> </a> <script>document.write(new Date().getFullYear());</script> Waqar Ahmed | All rights reserved.</a>
-		</div>
-		</div>
+        <!-- Footer -->
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <p>&copy; <script>document.write(new Date().getFullYear());</script> Waqar Ahmed | All rights reserved.</p>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
 
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+    <!-- JS Scripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -877,8 +838,7 @@
     <script src="js/main.js"></script>
     <script>
 
-
-	//top contact button functionality
+      // Smooth scrolling for anchor links
       $(document).ready(function(){
         $("a[href='#contact-section']").on('click', function(event) {
           if (this.hash !== "") {
